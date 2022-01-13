@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Lederboard</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="static/images/icons/logo.png" alt="">
+                <span>TOGO</span>
+            </div>
+
+            <div class="menu" id="menu">
+                <div class="menu__links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Works</a>
+                </div>
+                <div class="menu__profile">
+                    <img src="static/images/icons/profile.png" alt="">
+                </div>
+
+            </div>
+
+            <i class='menu_toggle bx bx-menu-alt-left' onclick="toggleMenu()"></i>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="top">
+            <div class="block top__players">
+                <h3>Top Player</h3>
+
+                <div class="players">
+                    <div class="player">
+                        <img src="static/images/players/player-1.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+
+                    <div class="player">
+                        <img src="static/images/players/player-2.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+
+                    <div class="player">
+                        <img src="static/images/players/player-3.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+
+                    <div class="player">
+                        <img src="static/images/players/player-4.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+
+                    <div class="player">
+                        <img src="static/images/players/player-5.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+
+                    <div class="player">
+                        <img src="static/images/players/player-6.png" alt="">
+                        <a href="#">John Smith</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="block blog">
+                    <h3>Top Blogs</h3>
+                    <div class="blogs">
+                        <div class="single">
+                            <div class="image">
+                                <img src="static/images/blogs/blog-1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>12 or My Favourite UI/UX Goodies</h2>
+                                <span>by <a href="#">Danny Sapio</a></span>
+                            </div>
+                        </div>
+
+                        <div class="single">
+                            <div class="image">
+                                <img src="static/images/blogs/blog-2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>UI cheat sheet: list vs grids</h2>
+                                <span>by <a href="#">Danny Sapio</a></span>
+                            </div>
+                        </div>
+
+                        <div class="single">
+                            <div class="image">
+                                <img src="static/images/blogs/blog-3.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>7 typography tips for interface design</h2>
+                                <span>by <a href="#">Danny Sapio</a></span>
+                            </div>
+                        </div>
+
+                        <div class="single">
+                            <div class="image">
+                                <img src="static/images/blogs/blog-4.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>Your logo is copied</h2>
+                                <span>by <a href="#">Danny Sapio</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="course">
+            <div class="block">
+                <h3>Latest Course</h3>
+
+                <div class="courses">
+                    <div class="single">
+                        <div class="image">
+                            <img src="static/images/courses/course-1.png" alt="">
+                            <div class="info">
+                                <h4>React - The Complete Guide 2021</h4>
+                                <a href="#" class="author">Reed Krakoff</a>
+
+                                <div class="others">
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='no bx bxs-star'></i>
+                                        </div>
+                                        <span>4.5</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <img src="static/images/icons/clock.png" alt="">
+                                        <span>1.30 hr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single">
+                        <div class="image">
+                            <img src="static/images/courses/course-2.png" alt="">
+                            <div class="info">
+                                <h4>React - The Complete Guide 2021</h4>
+                                <a href="#" class="author">Reed Krakoff</a>
+
+                                <div class="others">
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='no bx bxs-star'></i>
+                                        </div>
+                                        <span>4.5</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <img src="static/images/icons/clock.png" alt="">
+                                        <span>1.30 hr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single">
+                        <div class="image">
+                            <img src="static/images/courses/course-3.png" alt="">
+                            <div class="info">
+                                <h4>React - The Complete Guide 2021</h4>
+                                <a href="#" class="author">Reed Krakoff</a>
+
+                                <div class="others">
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='no bx bxs-star'></i>
+                                        </div>
+                                        <span>4.5</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <img src="static/images/icons/clock.png" alt="">
+                                        <span>1.30 hr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

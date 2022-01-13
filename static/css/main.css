@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+  padding-top: 94px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94px;
+  background: #562EFF;
+}
+
+header nav {
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  header nav {
+    padding: 0 20px;
+  }
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .logo img {
+  width: 40px;
+}
+
+header nav .logo span {
+  font-size: 30px;
+  color: white;
+}
+
+header nav .menu {
+  display: flex;
+   align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  header nav .menu {
+    width: 100%;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    background: #562EFF;
+    flex-direction: column;
+    display: none;
+  }
+  header nav .menu.active {
+    display: flex;
+  }
+}
+
+header nav .menu__links {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  header nav .menu__links {
+    flex-direction: column;
+  }
+}
+
+header nav .menu__links a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav .menu__profile {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  header nav .menu__profile {
+    margin: 20px 0;
+  }
+}
+
+header nav .menu__profile img {
+  width: 51px;
+  height: 51px;
+  cursor: pointer;
+}
+
+header .menu_toggle {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  header .menu_toggle {
+    display: block;
+  }
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+section.top {
+  margin-top: 30px;
+}
+
+section hr {
+  width: 100%;
+  margin: 40px auto;
+  background: #D1D1D1;
+  height: 1px;
+  border: none;
+}
+
+section .block h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #562EFF;
+  margin-bottom: 20px;
+}
+
+section .top__players .players {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 580px) {
+  section .top__players .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section .top__players .players {
+    grid-template-columns: 1fr;
+  }
+}
+
+section .top__players .players .player {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+  gap: 10px;
+}
+
+section .top__players .players .player img {
+  width: 100%;
+}
+
+section .top__players .players .player a {
+  color: black;
+}
+
+section .blog .blogs {
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  section .blog .blogs {
+    grid-template-columns: 1fr;
+  }
+}
+
+section .blog .blogs .single {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+section .blog .blogs .single .image img {
+  width: 100%;
+}
+
+section .blog .blogs .single .info h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+  section .blog .blogs .single .info h2 {
+    font-size: 15px;
+  }
+}
+
+section .blog .blogs .single .info span {
+  color: #9F9F9F;
+  display: block;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  section .blog .blogs .single .info span {
+    font-size: 12px;
+  }
+}
+
+section .blog .blogs .single .info span a {
+  color: #562EFF;
+}
+
+section .courses {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  section .courses {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section .courses {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
+
+section .courses .single .image img {
+  width: 100%;
+}
+
+section .courses .single .info {
+  display: flex;
+  flex-direction: column;
+}
+
+section .courses .single .info h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+section .courses .single .info .author {
+  color: #ED6B4F;
+}
+
+section .courses .single .info .others {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+section .courses .single .info .others .rating {
+  display: flex;
+  gap: 10px;
+}
+
+section .courses .single .info .others .rating .stars i {
+  color: gold;
+}
+
+section .courses .single .info .others .rating .stars i.no {
+  color: #A2A2A2;
+}
+
+section .courses .single .info .others .rating span {
+  color: #A2A2A2;
+}
+
+section .courses .single .info .others .time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #FFE4E8;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+section .courses .single .info .others .time img {
+  width: 20px;
+  height: 20px;
+}
+
+section .courses .single .info .others .time span {
+  font-size: 15px;
+  color: #FF4A60;
+  margin-right: 5px;
+}
